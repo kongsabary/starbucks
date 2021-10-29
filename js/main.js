@@ -74,7 +74,7 @@ const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromtion = false;
 promotionToggleBtn.addEventListener('click', function() {
-  isHidePromtion = !isHidePromtion
+  isHidePromtion = !isHidePromtion // true
   if (isHidePromtion) {
     // 숨김 처리!
     promotionEl.classList.add('hide');

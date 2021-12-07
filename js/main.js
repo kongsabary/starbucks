@@ -70,6 +70,18 @@ var swiper = new Swiper('.promotion .swiper-container', {
   }
 });
 
+var swiper = new Swiper('.awards .swiper-container', {
+  slidesPerView: 5, // 하나의 화면 몇개 슬라이드 보이게 할것이냐
+  autoplay: true,
+  loop: true, // 반복재생
+  spaceBetween: 30, // 사이사이 여백
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
+
+
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromtion = false;
